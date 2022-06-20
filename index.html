@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CalPre</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/icons/icon-192.png">
+    <meta name="theme-color" content="#05314D">  
+</head>
+<body>    
+    <main class="container">
+        <div class="modal">
+            <div class="modal__container">
+                <div class="modal__link">
+                    <p class="modal__pReset" id="btnResetModal"><img src="./img/trash.svg" alt="Reset App">RESET</p>
+                    <a href="#" class="modal__close">X</a>
+                </div>
+                <img src="./img/calculator.svg" class="modal__img" alt="Calculadora">
+                <p id="editBudgetModal">Presupuesto inicial <span id="budgetModal"></span></p>
+                <p>Total gastado <span id="totalModal"></span></p>
+                <p id="pRestModal">Restante actual <span id="restModal">0</span></p>
+            </div>
+        </div>
+        <header>
+            <h1 class="title">Cal📈Pre</h1>
+        </header>
+        <div class="flex-content">
+            <div class="sub-elementsOne">
+                <h2>Añade tus gastos aquí</h2>
+                <p class="caution">* No uses puntos ni comas *</p>        
+                <form action="#" class="divForm" id="form">
+                    <div class="inputDiv">
+                        <input required="" type="text" id="name">
+                        <label>Nombre del gasto</label>
+                    </div>
+                    <div class="inputDiv">
+                        <input required="" type="number" id="price">
+                        <label>Precio del gasto</label>
+                    </div> 
+                    <input type="submit" value="AÑADIR GASTO">
+                </form>        
+            </div>
+            <div class="sub-elementsTwo">
+                <div class="menu">
+                    <p>Menú</p>
+                    <img id="openModal" src="./img/menu.svg" alt="Menú">
+                </div>
+
+                <div class="paragraphsFlex">
+                    <p class="pBudget">Presupuesto <span id="budget"></span></p>                   
+                    <p class="pTotal">Gastado <span id="total"></span></p>
+                    <p class="pRest">Restante <span id="rest">0</span></p> 
+                    <p class="resetBtn" id="btnReset"><img src="./img/trash.svg" alt="Reset App"></p>
+                </div>
+                <div class="divOverflow">
+                    <table class="tableResult" id="result">
+                        <tbody></tbody>
+                    </table> 
+                </div>
+            </div>
+        </div>
+    </main> 
+    <script src="js/configsw.js" defer></script>   
+    <script src="js/app.js" type="module" defer></script>   
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "name": "Calculadora Presupuesto",
+  "short_name": "CalPre",
+  "description": " Esta aplicación permite hacer un seguimiento de las finanzas, controlando el presupuesto y los gastos",
+  "icons": [
+      {
+        "src": "img/icons/icon-48.png",
+        "sizes": "48x48",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/icon-72.png",
+        "sizes": "72x72",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/icon-96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/icon-128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/icon-384.png",
+        "sizes": "384x384",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "img/icons/icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/icon-682.png",
+        "sizes": "682x682",
+        "type": "image/png"
+      }
+  ], 
+  "start_url": "/index.html", 
+  "display": "standalone",
+  "theme_color": "#05314D",
+  "background_color": "#05314D",
+  "orientation": "portrait"
+}

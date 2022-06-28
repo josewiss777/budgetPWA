@@ -95,7 +95,6 @@ img {
   padding: 1rem;
   text-align: center;
   color: #05314d;
-  font-weight: bold;
   font-size: 0.8rem;
   transform: var(--transform);
   transition: var(--transition);

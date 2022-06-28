@@ -172,10 +172,13 @@ function clickAddCost(e) {
     messageAlert('Precio no válido', '#b9000071', 'error', animationE );
     return;
   }
+  const firstLetter = name.charAt(0).toUpperCase();
+  const restLetter = name.substring(1, name.length);
+  const newName = firstLetter.concat(restLetter);
   moment.locale('es');
   let date = moment().format('D MMMM'); 
   const objectCost = { 
-    name, 
+    name: newName, 
     price: price.toLocaleString('en-US'),
     date,
     id: Date.now(),    
